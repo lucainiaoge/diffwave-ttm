@@ -20,7 +20,7 @@ class AttrDict(dict):
 
 params = AttrDict(
     # Training params
-    batch_size=16, # 16
+    batch_size=8, # 16
     learning_rate=2e-4,
     max_grad_norm=None,
 
@@ -41,7 +41,7 @@ params = AttrDict(
     inference_noise_schedule=[0.0001, 0.001, 0.01, 0.05, 0.2, 0.5],
 
     # unconditional sample len
-    audio_len = 32000, # unconditional_synthesis_samples
+    audio_len = 16000, # unconditional_synthesis_samples
 )
 
 
